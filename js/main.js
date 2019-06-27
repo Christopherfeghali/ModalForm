@@ -60,7 +60,7 @@ $(document).on("click", ".ruleremove", function() // removes latest input and pr
 {
 	//if(countrules>=1){
 		$('.newfields').last().remove();
-		//countrules--;
+		countrules--;
 	//}
 });
 
