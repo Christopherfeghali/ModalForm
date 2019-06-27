@@ -244,6 +244,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   	border: none;
 
   	background-color: #f4840c;
+  	color: white;
 
   	-webkit-transition-duration: 0.4s; /* Safari */
   	transition-duration: 0.4s;
@@ -251,11 +252,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 #confirm:hover {
   background-color: #4CAF50; /* Green */
-  color: white;
+  color: black;
 }
 
 #cancel
 {
+	color: white;
+	background-color: #4f5359;
 	margin-left: 10px;
 
 	padding-left: 20px;
@@ -273,7 +276,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 #cancel:hover {
   background-color: #d30a14; /* Red */
-  color: white;
+  color: black;
 }
 
 
