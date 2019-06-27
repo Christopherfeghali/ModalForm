@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>ModalForm</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<h2>Modal Example</h2>
+
+	<!-- Trigger/Open The Modal -->
+	<button id="myButton">Open ModalForm</button>
+
+	<div id="myModal" class="modal">
+
+  	<!-- Modal content -->
+  		<div class="modal-content">
+    		<span class="close">&times;</span>
+    		<h2>Add Revenue Group</h2>
+    		<form>
+    			<div id = "titlefield">
+    				<p>Revenue Group Title</p>
+  					<input type="text" name="revenueTitle">
+    			</div>
+    			<div id = "dropdown">
+    				<p> 
+    					if
+    					<select><!-- Dropdown menu -->
+	    					<option value="ALL">ALL</option>
+						    <option value="option1">option1</option>
+						    <option value="option2">option2</option>
+						    <option value="option3">option3</option>
+    					</select>
+    					of the below conditions met
+    				</p>
+    			</div>
+    		</form>
+
+    		<div class="rules">
+	    		<div id = "parameters">
+	  				<form>
+		  				<select>
+			    			<option value="aff_sub">aff_sub</option>
+							<option value="option1">option1</option>
+		    			</select>
+		    			<select>
+			    			<option value="is">is</option>
+							<option value="option1">option1</option>
+		    			</select>
+		    				<div class="ruleParameter">
+		    					<div class="rulefields"> <!-- paramater bar including add button -->
+		    						<input  class="ruleinput" type="text" name="revenueTitle" placeholder="  insert parameter">
+		    						<button class="ruleadd" type="button"><b>add rule</b></button>
+		    					</div>
+		    				</div>
+		    			<button class="add" type="button"><b>+</b></button> <!-- add/remove buttons -->
+	  					<button class="remove" type="button"><b>-</b></button>
+	  				</form>
+	  			</div>
+  			</div>
+
+  			<div id = "revenue">
+  				<p>
+  					then revenue is
+  					<input  name="revenue" value="15%"> 
+  					<!--used input field for it to match look of UI design otherwise would use output with requied output datatype-->
+  				</p>
+  				<button id="confirm" type="button">Confirm</button>
+  				<button id="cancel" type="button">Cancel</button>
+  			</div>
+
+		</div>
+
+  	</div>
+
+  		
+
+</body>
+
+<script type="text/javascript" src="./js/main.js"></script>
+
+</html>
