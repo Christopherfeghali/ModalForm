@@ -58,10 +58,10 @@ $(document).on("click", ".ruleadd", function() // adds new input rules and inclu
 
 $(document).on("click", ".ruleremove", function() // removes latest input and prevents original rule from being deleted
 {
-	if(countrules>=1){
+	//if(countrules>=1){
 		$('.newfields').last().remove();
-		countrules--;
-	}
+		//countrules--;
+	//}
 });
 
 $(document).on("click", "#cancel", function() // cancel button closes the modal 
